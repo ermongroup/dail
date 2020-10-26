@@ -24,7 +24,7 @@ For CPU machines, replace the `tensorflow-gpu==1.15.0` package with `tensorflow=
 -> Train expert domain policy on new task via BC 
 -> Compose alignments with new expert domain policy for zeroshot imitation
 ```
-
+[Videos](https://www.youtube.com/watch?v=Ue-QhWbUr5s&feature=youtu.be&ab_channel=KunoKim) of learned alignments
 
 ### Generative Adversarial MDP Alignment (GAMA)
 
