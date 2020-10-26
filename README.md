@@ -17,7 +17,7 @@ pip install -r requirements.txt
 For CPU machines, replace the `tensorflow-gpu==1.15.0` package with `tensorflow==1.15.0`
 
 
-### Align MDPs via Generative Adversarial MDP Alignment (GAMA)
+### Generative Adversarial MDP Alignment (GAMA)
 
 All MDP alignment commands can be found in the `scripts/align_*.sh` shell scripts. Before running: 
 (1). First appropriately set `VENV_DIR` in the shell script to your virtualenv directory for this project. Furthermore, set the `GPU_NUM` to the number of GPUs available on your machine. For CPU runs, simply set the gpu_num variable to -1. Finally, set the the number of seeds you want to run by changing the `END` variable. (default = 9) 
