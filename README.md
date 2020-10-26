@@ -17,9 +17,18 @@ pip install -r requirements.txt
 For CPU machines, replace the `tensorflow-gpu==1.15.0` package with `tensorflow==1.15.0`
 
 
+### Overall Pipeline ### 
+
+```
+-> Learn state/action alignments via GAMA 
+-> Train expert domain policy on new task via BC 
+-> Compose alignments with new expert domain policy for zeroshot imitation
+```
+
+
 ### Generative Adversarial MDP Alignment (GAMA)
 
-All MDP alignment commands can be found in the `scripts/align_*.sh` shell scripts. Before running: 
+In the GAMA step, we learn state/action alignments between expert and self domain MDPs by minimizing the GAMA loss which consists of a distribution matching loss in the expert domain and a behavioral cloning (imitation) loss in the self domain. Prior to minimizing the GAMA loss, we first need to learn the expert policy for the alignment tasks as well as a dynamics model in the self domain. To reduce execution time, we provide expert domain policies for the alignment tasks pretrained via BC in `dail/alignment_expert/` and load these pretrained experts during the GAMA step. All MDP alignment commands can be found in the `scripts/align_*.sh` shell scripts. Before running: 
 
 1. First appropriately set `VENV_DIR` in the shell script to your virtualenv directory for this project. Furthermore, set the `GPU_NUM` to the number of GPUs available on your machine. For CPU runs, simply set the gpu_num variable to -1. Finally, set the the number of seeds you want to run by changing the `END` variable. (default = 9) 
 
