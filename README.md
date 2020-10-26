@@ -2,7 +2,9 @@
 
 This repo contains the official implementation for the paper [Domain Adaptive Imitation Learning](https://arxiv.org/abs/1910.00105). 
 
-by Kuno Kim, Stanford AI Lab.
+Authors: Kuno Kim, Yihong Gu, Jiaming Song, Shengjia Zhao, Stefano Ermon. 
+
+For any questions, please correspond with Kuno Kim (khkim@cs.stanford.edu)
 
 -----------------------------------------------------------------------------------------
 
