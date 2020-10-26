@@ -2,13 +2,15 @@
 
 This repo contains the official implementation for the paper [Domain Adaptive Imitation Learning](https://arxiv.org/abs/1910.00105). 
 
-by Kuno Kim, Stanford AI Lab.
+Authors: Kuno Kim, Yihong Gu, Jiaming Song, Shengjia Zhao, Stefano Ermon. 
+
+For any questions, please correspond with Kuno Kim (khkim@cs.stanford.edu)
 
 -----------------------------------------------------------------------------------------
 
 ### Dependencies
 
-Core python dependencies are `tensorflow==1.15.0, mujoco-py==0.5.7, gym==0.7.4`. Also be sure to have tmux (https://github.com/tmux/tmux) installed to run the provided shell scripts and virtualenv for package management. On a GPU machine, run the following to install all necessary python packages for our code.
+Core python dependencies are `tensorflow==1.15.0, mujoco-py==0.5.7, gym==0.7.4`. Also be sure to have [tmux](https://github.com/tmux/tmux) installed to run the provided shell scripts and [virtualenv](https://pypi.org/project/virtualenv/) for package management. On a GPU machine, run the following to install all necessary python packages for our code.
 
 ```bash
 pip install -r requirements.txt
